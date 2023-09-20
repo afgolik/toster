@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'GothamProRegular';
+    src: url(./fonts/GothamProRegular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'GothamProBold';
+    src: url(./fonts/GothamProBold.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    color: inherit;
+    outline: none;
+    list-style: none;
+
+}
+body {
+    max-width: 390px;
+    margin: 0 auto;
+    font-family: 'GothamProRegular', sans-serif;
+}
+.flag {
+    width: 11px;
+    height: 8px;
+    margin: 2px;
+}
+.header__stocks {
+    color: #2C2B31;
+    text-align: center;
+    font-size: 13px;
+    background-color: #F19D2F;
+    padding: 10px 10px 8px 10px;
+}
+.header__logo {
+    background-color: #FFD1AC;
+    padding: 19px 0;
+}
+.header__image {
+    text-align: center;
+}
+.header__text {
+    color: #2C2B31;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.main {
+    background-image: url("../images/main-back.png");
+    display: flex;
+    padding: 209px 13px 14px;
+    justify-content: space-between;
+    font-family: 'GothamProBold', sans-serif;
+}
+.main__timer {
+    width: 103px;
+    height: 58px;
+    border-radius: 7px;
+    background-color: #F19D2F;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+.main__text {
+    font-size: 11px;
+}
+.main__count {
+    font-size: 21px;
+}
+.main__price {
+    width: 116px;
+    height: 58px;
+    border-radius: 6px;
+    background-color: #37D997;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+.main__price-old {
+    font-size: 18px;
+    position: relative;
+}
+.main__price-old span {
+    width: 89px;
+    height: 3px;
+    background-color: #E27500;
+    position: absolute;
+    top: 9px;
+    left: -1px;
+    border-radius: 20px;
+}
+.main__price-new {
+    font-size: 22px;
+}
+
+.cart {
+    padding: 11px 16px 40px;
+    background-color: #F0F0F0;
+}
+.cart__info {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart__info-rating {
+    color: #2C2B31;
+}
+.cart__info-purpose {
+    color: #37D997;
+    text-decoration: underline;
+}
+.cart__title {
+    text-transform: uppercase;
+    font-family: 'GothamProBold', sans-serif;
+    font-size: 19px;
+    color: #2C2B31;
+    margin-top: 14px;
+}
+.cart-slider {
+    margin-top: 19px;
+}
+.cart__slider-container {
+    position: relative;
+    height: 232px;
+    overflow: hidden;
+}
+.cart__slider-main {
+    position: absolute;
+    display: flex;
+    left: 0;
+    transition: left 0.5s;
+}
+.mini-slide-active {
+    opacity: 0.4;
+}
+.cart__slider-items {
+    display: flex;
+    gap: 12px;
+    margin-top: 17px;
+}
+.cart__slider-item {
+    cursor: pointer;
+}
+.cart__about {
+    margin-top: 11px;
+}
+.cart__about-item {
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 12px;
+}
+.cart__about-item span {
+    font-family: 'GothamProBold', sans-serif;
+}
+.cart__about-stars {
+    color: #2C2B31;
+    font-size: 15px;
+}
+.cart__selects {
+    display: flex;
+    margin-top: 18px;
+    justify-content: space-between;
+}
+.cart__select {
+    position: relative;
+}
+.cart__select-title {
+    color: #2C2B31;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.select::after {
+    content: '';
+    background-image: url("../images/arrow.svg");
+    width: 21px;
+    height: 10px;
+    position: absolute;
+    top: 36px;
+    right: 10px;
+    background-size: contain;
+}
+select {
+    width: 170px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #fff;
+    text-align: center;
+    font-family: 'GothamProBold', sans-serif;
+    color: #2C2B31;
+    font-size: 22px;
+    text-transform: uppercase;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+}
+.cart__button {
+    display: block;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 30px;
+    border-radius: 15px;
+    background: #37D997;
+    margin-top: 20px;
+    padding: 8px 0;
+    text-align: center;
+    cursor: pointer;
+}
